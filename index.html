@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamica ByeCar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/dnc-logo.png" alt="dnc" width="150">
+        <p>ByeCar</p>
+    </header>
+
+    <section>
+        <div class="left-side">
+            <h1>Ter <b>uma moto</b> por assinatura nunca foi tão fácil!</h1>
+            <img src="/assets/IMG1.png" alt="" width="500">
+        </div>
+
+        <div class="right-side">
+            <h1>Conheça nossas <b>motos</b>!</h1>
+            <div class="carousel">
+                <button onclick="show(-1)">
+                    <img src="/assets/Vector-left.png" alt="Flecha Left">
+                </button>
+    
+                <ul class="allcards">
+                    <li class="card-moto">
+                        <h1>Scooter Elétrica Voltz EV1</h1>
+                        <img src="/assets/moto1.png" alt="moto">
+                        <div>
+                            <h2>A partir de</h2>
+                            <p>R$ 619,90</p>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                        
+                    </li>
+                    <li class="card-moto">
+                        <h1>Honda CB 500X</h1>
+                        <img src="/assets/moto2.png" alt="moto">
+                        <div>
+                            <h2>A partir de</h2>
+                            <p>R$ 799,90</p>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                        
+                    </li>
+                </ul>
+
+                <button onclick="show(+1)">
+                    <img src="/assets/Vector-right.png" alt="Flecha Right">
+                </button>
+                </div>
+            
+            <button id="final" onclick="more()">Saiba mais</button>
+        </div>
+    </section>
+</body>
+<script src="/script.js/script.js"></script>
+</html>
