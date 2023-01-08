@@ -91,19 +91,33 @@ section {
     background-color: transparent;
 }
 
+.allCards {
+    max-width: 540px;
+    min-height: 540px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
 section ul {
     display: flex;
     flex-direction: row;
-    max-width: 540px;
+    max-width: 560px;
     min-height: 540px;
     overflow: hidden;
     gap: 2rem;
+    List-style-type: none;
+    padding-inline-start: 0px;
+
 }
 
 
 ul li {
     display: flex;
     flex-direction: column;
+    List-style-type: none;
+    margin: 0 auto;
     border-radius: 15px;
     text-align: center;
     min-width: 540px;
@@ -117,14 +131,12 @@ ul li {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-/* 
-    width: 500px;
-    height: 500px; */
+   
 
     background: rgba(77, 188, 233, 0.75);
     border-radius: 15px;
     padding: 10px;
-    margin: 30px;
+    margin: 30px 0px 30px 0px;
 
 }
 
