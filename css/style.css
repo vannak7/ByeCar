@@ -200,7 +200,7 @@ ul li {
     color: #FFFFFF;
 }
 
-#final {
+#open-modal {
     width: 341px;
     height: 75px;
     left: 935px;
@@ -220,9 +220,137 @@ ul li {
     color: #FFFFFF;
 }
 
-#final:hover {
+#open-modal:hover {
     color: black;
     cursor: pointer;
     background: #06a9ea;
 }
+
+
+
+
+
+
+#fades {
+    position: fixed;
+    margin-top: 140px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128,128,128, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(77, 188, 233, 0.90);
+    width: 600px;
+    max-width: 80%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#fades, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.modal-header button {
+    background-color: rgba(77, 188, 233, 0.75);
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: .4s;
+    font-weight: bolder;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-body h2 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px 40px 0pc 40px;
+}
+
+#queroAssinar {
+    width: 210px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+
+    color: #265E70;
+    margin-top: 40px;
+}
+
+#modal.hide, #fades.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
